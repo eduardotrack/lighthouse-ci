@@ -1,9 +1,13 @@
-language: node_js
-node_js: v12
+language:
+  - node_js # Node 10 LTS or later required
+node_js:
+  - '10'
 addons:
-  chrome: stable
+  chrome: stable # make Chrome available
 before_install:
-  - npm install -g @lhci/cli@0.8.x
+  - npm install -g @lhci/cli@0.3.x # install LHCI
 script:
-  - npm run build
+  - echo "Notice - no test specified" # skip 'npm test' and run LHCI
+after_success:
+#  - lhci autorun --upload.target=temporary-public-storage # run lighthouse CI against your static site
   - lhci autorun

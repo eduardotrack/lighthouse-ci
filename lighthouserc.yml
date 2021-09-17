@@ -2,9 +2,9 @@ ci:
   collect:
     numberOfRuns: 3
     additive: true
-    staticDistDir: './'
     url:
       - https://pandanjo.com/
+  assert:
     lighthouse: all
     assertions:
       offscreen-images: 'on'
@@ -20,5 +20,5 @@ ci:
           aggregationMethod: optimistic
   upload:
     target: lhci
-    serverBaseUrl: https://protected-hollows-39710.herokuapp.com/
+     serverBaseUrl: https://protected-hollows-39710.herokuapp.com/
     token: $LHCI_TOKEN
