@@ -1,11 +1,6 @@
 ci:
   collect:
-    numberOfRuns: 3
-    additive: true
-    url:
-      - https://protected-hollows-39710.herokuapp.com/
-      - https://protected-hollows-39710.herokuapp.com/catalog-page/
-      - https://protected-hollows-39710.herokuapp.com/product-page/
+     staticDistDir: './',
   assert:
     lighthouse: all
     assertions:
