@@ -20,5 +20,5 @@ ci:
           aggregationMethod: optimistic
   upload:
     target: lhci
-     serverBaseUrl: https://protected-hollows-39710.herokuapp.com/
+    serverBaseUrl: https://protected-hollows-39710.herokuapp.com/
     token: $LHCI_TOKEN
