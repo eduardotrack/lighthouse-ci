@@ -4,6 +4,9 @@ ci:
     additive: true
     url:
       - https://pandanjo.com/
+      - https://graointeligencia.online/
+      - https://www.svninvestimentos.com.br/
+      - https://www.magtek.com.br/
   assert:
     lighthouse: all
     assertions:
