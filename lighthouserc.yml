@@ -2,6 +2,7 @@ ci:
   collect:
     numberOfRuns: 3
     additive: true
+    staticDistDir: './'
     url:
       - https://pandanjo.com/
     lighthouse: all
