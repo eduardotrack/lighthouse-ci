@@ -10,4 +10,5 @@ script:
   - echo "Notice - no test specified" # skip 'npm test' and run LHCI
 after_success:
 #  - lhci autorun --upload.target=temporary-public-storage # run lighthouse CI against your static site
+  - npm run build
   - lhci autorun
