@@ -1,7 +1,9 @@
 ci:
   collect:
-     staticDistDir: './',
-  assert:
+    numberOfRuns: 3
+    additive: true
+    url:
+      - https://pandanjo.com/
     lighthouse: all
     assertions:
       offscreen-images: 'on'
